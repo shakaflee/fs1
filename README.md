@@ -66,3 +66,16 @@ git config --global --unset https.proxy
 # After this I can finally push to reomoto in Git.
 ```
 
+2022-10-23 23:05:00
+
+here encounter an err:
+```
+error: remote origin already exists.
+
+# here is solution: to update the existing remote
+git remote set-url origin url
+
+# or add another different name to this repo which is not "origin"
+```
+
+
