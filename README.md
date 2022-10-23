@@ -53,4 +53,16 @@ git commit -m "update README.md"
 git push origin main
 # sync local changes with remote
 ```
+here I meet an err which is:
+
+```
+Failed to conne ct to github.com port 443
+# this is what Git tells me the err.
+
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+# here is the answer I google and find useful.
+# this is to unset proxy.
+# After this I can finally push to reomoto in Git.
+```
 
